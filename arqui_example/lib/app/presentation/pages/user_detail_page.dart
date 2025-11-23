@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/user_controller.dart';
 
-class UserDetailPage extends StatelessWidget {
+class UserDetailPage extends GetView<UserController>{
+  const UserDetailPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<UserController>();
 
     return Scaffold(
       appBar: AppBar(title: const Text('User Detail')),
